@@ -17,7 +17,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0UQ-bG-3RU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.83202558755874634" green="0.98246544599533081" blue="0.47658646106719971" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonName" id="JrX-qn-SC4">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
@@ -26,6 +26,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.83202558760000001" green="0.98246544599999996" blue="0.47658646110000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="b8R-HO-nTb" kind="show" id="1n6-Sw-9l4"/>
                                 </connections>
@@ -75,7 +76,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ue6-e7-8h6" firstAttribute="top" secondItem="ctq-j3-nBf" secondAttribute="bottom" constant="25" id="0RJ-Yg-X1A"/>
                             <constraint firstItem="nJK-ff-Imk" firstAttribute="trailing" secondItem="MZb-Mr-WHQ" secondAttribute="trailing" constant="20" id="FPK-BM-MNa"/>
@@ -138,22 +139,24 @@
             </objects>
             <point key="canvasLocation" x="-2591" y="550"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Favorite Contacts-->
         <scene sceneID="1x7-r6-t9H">
             <objects>
                 <tableViewController id="kW6-xu-IbZ" customClass="SecondVarTableViewController" customModule="PersonsListApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KBT-Rx-OW8">
+                    <tableView key="view" autoresizesSubviews="NO" contentMode="center" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="KBT-Rx-OW8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SecondVarPersonName" id="EPj-3M-aF7">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                            <tableViewCell autoresizesSubviews="NO" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SecondVarPersonName" id="EPj-3M-aF7">
+                                <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EPj-3M-aF7" id="vtX-b7-BqX">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="1" blue="0.73718428938356162" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -161,7 +164,7 @@
                             <outlet property="delegate" destination="kW6-xu-IbZ" id="1AQ-bs-Gdc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Byo-yx-tcH"/>
+                    <navigationItem key="navigationItem" title="Favorite Contacts" id="Byo-yx-tcH"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="99A-3c-oWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

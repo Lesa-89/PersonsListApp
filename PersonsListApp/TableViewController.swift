@@ -24,7 +24,7 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PersonName", for: indexPath)
         
-        cell.textLabel?.text = personList[indexPath.row].name + " " + personList[indexPath.row].surname
+        cell.textLabel?.text = personList[indexPath.row].fullName
         cell.textLabel?.numberOfLines = 0
         
         return cell

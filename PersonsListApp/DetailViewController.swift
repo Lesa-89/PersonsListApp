@@ -19,9 +19,9 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        nameLabel.text = person.name + " " + person.surname
+        nameLabel.text = person.fullName
         phoneLabel.text = person.phoneNumber
-        emailLabel.text = (person.email).lowercased()
+        emailLabel.text = person.email
         
     }
 

@@ -21,6 +21,7 @@ struct Person {
     var surname: String
     var phoneNumber: String
     var email: String
+    var fullName: String
 }
 
 func personArrayCteating() -> [Person] {
@@ -30,10 +31,14 @@ func personArrayCteating() -> [Person] {
     let phoneNumberArrayShuffled = phoneNumberArray.shuffled()
     
     for numberOfPerson in 0..<nameArray.count {
-        let newPerson = Person(name: nameArrayShuffled[numberOfPerson],
-                               surname: surNameArrayShuffled[numberOfPerson],
-                               phoneNumber: phoneNumberArrayShuffled[numberOfPerson],
-                               email: "\(nameArrayShuffled[numberOfPerson])\(surNameArrayShuffled[numberOfPerson])@mail.ru")
+        let name = nameArrayShuffled[numberOfPerson]
+        let surname = surNameArrayShuffled[numberOfPerson]
+        let phoneNumber = phoneNumberArrayShuffled[numberOfPerson]
+        let email = ("\(nameArrayShuffled[numberOfPerson])\(surNameArrayShuffled[numberOfPerson])@mail.ru").lowercased()
+        let fullName = "\(nameArrayShuffled[numberOfPerson]) \(surNameArrayShuffled[numberOfPerson])"
+        
+        
+        let newPerson = Person(name: name, surname: surname, phoneNumber: phoneNumber, email: email, fullName: fullName)
         personArray.append(newPerson)
     }
     return personArray
